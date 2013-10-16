@@ -1,3 +1,8 @@
+# This script calls the waterdata_func function
+# and plots the graphs
+# Arjun Adhikari, TAMUG
+
+
 import waterdata_func as function
 import matplotlib.pyplot as plt
 import numpy as np
