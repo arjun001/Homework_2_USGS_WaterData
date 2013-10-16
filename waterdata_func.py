@@ -1,3 +1,7 @@
+# This is function is called by h2_p.py 
+# This downloads data from url for desired site and date ranges.
+# Includes begin date, end date, appends
+
 import numpy as np
 import urllib
 from datetime import datetime, date
