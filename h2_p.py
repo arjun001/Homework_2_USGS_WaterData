@@ -2,6 +2,10 @@
 # and plots the graphs
 # Arjun Adhikari, TAMUG
 
+# USAGE: Change the line inputs for desied site, and date ranges.
+
+# Calls: waterdata_func.py
+
 
 import waterdata_func as function
 import matplotlib.pyplot as plt
@@ -40,8 +44,8 @@ stdev_dis = std[(~np.isnan(std))]
 upper_limit   = mean_dis+stdev_dis
 lower_limit = mean_dis-stdev_dis
 
-begin_time = datetime(2010,1,01)
-end_time   = datetime(2013,1,1)
+begin_time = datetime(2010,1,01) # Change input for desired begin date
+end_time   = datetime(2013,1,1)  # Change input for desired end date
 idx_start  = np.where(dates==begin_time)
 idx_end    = np.where(dates==end_time)
 time_date  = dates[np.where(yea==2012)]
